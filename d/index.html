@@ -25,8 +25,8 @@
       <p><strong>Example:</strong> copy "c:\sus.txt" "c:\users\batman\desktop\homework.txt" false</p>
       <p><strong>Arguments:</strong></p>
       <ul>
-        <li>sourceFilePath (text): The source file path.</li>
-        <li>destFilePath (text): The destination file path.</li>
+        <li>source-File-Path (text): The source file path.</li>
+        <li>dest-File-Path (text): The destination file path.</li>
         <li>overwrite (boolean): Whether to overwrite if the destination file already exists.</li>
       </ul>
     </td>
@@ -38,7 +38,7 @@
     <td class="command-info">
       <p><strong>Description:</strong> Retrieves a file.</p>
       <p><strong>Example:</strong> get-file "c:\users\batman\desktop\homework.txt"</p>
-      <p><strong>Arguments:</strong> filePath (text): The file path to retrieve.</p>
+      <p><strong>Arguments:</strong> file-Path (text): The file path to retrieve.</p>
     </td>
   </tr>
   <tr class="clickable-row" data-target="command3">
@@ -48,7 +48,11 @@
     <td class="command-info">
       <p><strong>Description:</strong> Moves a file.</p>
       <p><strong>Example:</strong> move "c:\users\batman\hehe.exe" "c:\users\batman\app.exe"</p>
-      <p><strong>Arguments:</strong> sourceFilePath (text): The source file path. destFilePath (text): The destination file path.</p>
+      <p><strong>Arguments:</strong></p>
+        <ul>
+          <li>source-File-Path (text): The source file path.</li>
+          <li>dest-File-Path (text): The destination file path.</li>
+        </ul>
     </td>
   </tr>
   <tr class="clickable-row" data-target="command4">
@@ -58,7 +62,7 @@
     <td class="command-info">
       <p><strong>Description:</strong> Removes a file.</p>
       <p><strong>Example:</strong> remove "c:\users\batman\desktop\homework.txt"</p>
-      <p><strong>Arguments:</strong> filePath (text): The file path to remove.</p>
+      <p><strong>Arguments:</strong> file-Path (text): The file path to remove.</p>
     </td>
   </tr>
   <!-- System Commands -->
@@ -151,7 +155,7 @@
     <td class="command-info">
       <p><strong>Description:</strong> Selects a user by their ID.</p>
       <p><strong>Example:</strong> select 462378</p>
-      <p><strong>Arguments:</strong> userID (integer): The ID of the user to select.</p>
+      <p><strong>Arguments:</strong> user-ID (integer): The ID of the user to select.</p>
     </td>
   </tr>
   <tr class="clickable-row" data-target="command14">
@@ -234,7 +238,7 @@
       <p><strong>Example:</strong> open "explorer" "c:\windows" false</p>
       <p><strong>Arguments:</strong></p>
       <ul>
-        <li>filePath (text): The file path to open.</li>
+        <li>file-Path (text): The file path to open.</li>
         <li>args (text, null): Additional arguments for opening the file.</li>
         <li>hidden (boolean, false): Whether to open the file hidden.</li>
       </ul>
