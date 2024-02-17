@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WinTroy Documentation</title>
+  <link rel="stylesheet" href="doc.css">
+</head>
+<body>
+
+<h1>WinTroy Documentation</h1>
+<input type="text" id="searchInput" placeholder="Search commands...">
+
+<table>
+  <tr>
+    <th>Command</th>
+  </tr>
+  <!-- File Management Commands -->
+  <tr class="clickable-row" data-target="command1">
+    <td>copy</td>
+  </tr>
+  <tr class="hidden" id="command1">
+    <td class="command-info">
+      <p><strong>Description:</strong> Copies a file.</p>
+      <p><strong>Example:</strong> copy "c:\sus.txt" "c:\users\batman\desktop\homework.txt" false</p>
+      <p><strong>Arguments:</strong></p>
+      <ul>
+        <li>sourceFilePath (text): The source file path.</li>
+        <li>destFilePath (text): The destination file path.</li>
+        <li>overwrite (boolean): Whether to overwrite if the destination file already exists.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command2">
+    <td>get-file</td>
+  </tr>
+  <tr class="hidden" id="command2">
+    <td class="command-info">
+      <p><strong>Description:</strong> Retrieves a file.</p>
+      <p><strong>Example:</strong> get-file "c:\users\batman\desktop\homework.txt"</p>
+      <p><strong>Arguments:</strong> filePath (text): The file path to retrieve.</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command3">
+    <td>move</td>
+  </tr>
+  <tr class="hidden" id="command3">
+    <td class="command-info">
+      <p><strong>Description:</strong> Moves a file.</p>
+      <p><strong>Example:</strong> move "c:\users\batman\hehe.exe" "c:\users\batman\app.exe"</p>
+      <p><strong>Arguments:</strong> sourceFilePath (text): The source file path. destFilePath (text): The destination file path.</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command4">
+    <td>remove</td>
+  </tr>
+  <tr class="hidden" id="command4">
+    <td class="command-info">
+      <p><strong>Description:</strong> Removes a file.</p>
+      <p><strong>Example:</strong> remove "c:\users\batman\desktop\homework.txt"</p>
+      <p><strong>Arguments:</strong> filePath (text): The file path to remove.</p>
+    </td>
+  </tr>
+  <!-- System Commands -->
+  <tr class="clickable-row" data-target="command5">
+    <td>end</td>
+  </tr>
+  <tr class="hidden" id="command5">
+    <td class="command-info">
+      <p><strong>Description:</strong> Ends the process.</p>
+      <p><strong>Example:</strong> end</p>
+      <p><strong>Arguments:</strong> None</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command6">
+    <td>restart</td>
+  </tr>
+  <tr class="hidden" id="command6">
+    <td class="command-info">
+      <p><strong>Description:</strong> Restarts the system.</p>
+      <p><strong>Example:</strong> restart</p>
+      <p><strong>Arguments:</strong> None</p>
+    </td>
+  </tr>
+  <!-- Network Commands -->
+  <tr class="clickable-row" data-target="command7">
+    <td>get-local-ip</td>
+  </tr>
+  <tr class="hidden" id="command7">
+    <td class="command-info">
+      <p><strong>Description:</strong> Retrieves the local IP address.</p>
+      <p><strong>Example:</strong> get-local-ip</p>
+      <p><strong>Arguments:</strong> None</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command8">
+    <td>get-public-ip</td>
+  </tr>
+  <tr class="hidden" id="command8">
+    <td class="command-info">
+      <p><strong>Description:</strong> Retrieves the public IP address.</p>
+      <p><strong>Example:</strong> get-public-ip</p>
+      <p><strong>Arguments:</strong> None</p>
+    </td>
+  </tr>
+  <!-- Task Management Commands -->
+  <tr class="clickable-row" data-target="command9">
+    <td>get-id</td>
+  </tr>
+  <tr class="hidden" id="command9">
+    <td class="command-info">
+      <p><strong>Description:</strong> Retrieves the ID.</p>
+      <p><strong>Example:</strong> get-id</p>
+      <p><strong>Arguments:</strong> None</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command10">
+    <td>get-prefix</td>
+  </tr>
+  <tr class="hidden" id="command10">
+    <td class="command-info">
+      <p><strong>Description:</strong> Retrieves the prefix.</p>
+      <p><strong>Example:</strong> get-prefix</p>
+      <p><strong>Arguments:</strong> None</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command11">
+    <td>get-token</td>
+  </tr>
+  <tr class="hidden" id="command11">
+    <td class="command-info">
+      <p><strong>Description:</strong> Retrieves the token.</p>
+      <p><strong>Example:</strong> get-token</p>
+      <p><strong>Arguments:</strong> None</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command12">
+    <td>screen</td>
+  </tr>
+  <tr class="hidden" id="command12">
+    <td class="command-info">
+      <p><strong>Description:</strong> Screens the user.</p>
+      <p><strong>Example:</strong> screen</p>
+      <p><strong>Arguments:</strong> None</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command13">
+    <td>select</td>
+  </tr>
+  <tr class="hidden" id="command13">
+    <td class="command-info">
+      <p><strong>Description:</strong> Selects a user by their ID.</p>
+      <p><strong>Example:</strong> select 462378</p>
+      <p><strong>Arguments:</strong> userID (integer): The ID of the user to select.</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command14">
+    <td>select-all</td>
+  </tr>
+  <tr class="hidden" id="command14">
+    <td class="command-info">
+      <p><strong>Description:</strong> Selects all users.</p>
+      <p><strong>Example:</strong> select-all</p>
+      <p><strong>Arguments:</strong> None</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command15">
+    <td>taskinfo</td>
+  </tr>
+  <tr class="hidden" id="command15">
+    <td class="command-info">
+      <p><strong>Description:</strong> Provides information about a task.</p>
+      <p><strong>Example:</strong> taskinfo "task"</p>
+      <p><strong>Arguments:</strong> task (text): The task to get information about.</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command16">
+    <td>test-report</td>
+  </tr>
+  <tr class="hidden" id="command16">
+    <td class="command-info">
+      <p><strong>Description:</strong> Generates a test report with a message.</p>
+      <p><strong>Example:</strong> test-report "hello"</p>
+      <p><strong>Arguments:</strong> message (text, "Test"): The message for the test report.</p>
+    </td>
+  </tr>
+  <!-- Miscellaneous Commands -->
+  <tr class="clickable-row" data-target="command17">
+    <td>get-prefix</td>
+  </tr>
+  <tr class="hidden" id="command17">
+    <td class="command-info">
+      <p><strong>Description:</strong> Retrieves the prefix.</p>
+      <p><strong>Example:</strong> get-prefix</p>
+      <p><strong>Arguments:</strong> None</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command18">
+    <td>get-report-channel</td>
+  </tr>
+  <tr class="hidden" id="command18">
+    <td class="command-info">
+      <p><strong>Description:</strong> Retrieves the report channel.</p>
+      <p><strong>Example:</strong> get-report-channel</p>
+      <p><strong>Arguments:</strong> None</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command19">
+    <td>hwinfo</td>
+  </tr>
+  <tr class="hidden" id="command19">
+    <td class="command-info">
+      <p><strong>Description:</strong> Provides hardware information.</p>
+      <p><strong>Example:</strong> hwinfo</p>
+      <p><strong>Arguments:</strong> None</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command20">
+    <td>list</td>
+  </tr>
+  <tr class="hidden" id="command20">
+    <td class="command-info">
+      <p><strong>Description:</strong> Lists files in a directory.</p>
+      <p><strong>Example:</strong> list "c:\windows"</p>
+      <p><strong>Arguments:</strong> directory (string): The directory to list files from.</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command21">
+    <td>open</td>
+  </tr>
+  <tr class="hidden" id="command21">
+    <td class="command-info">
+      <p><strong>Description:</strong> Opens a file.</p>
+      <p><strong>Example:</strong> open "explorer" "c:\windows" false</p>
+      <p><strong>Arguments:</strong></p>
+      <ul>
+        <li>filePath (text): The file path to open.</li>
+        <li>args (text, null): Additional arguments for opening the file.</li>
+        <li>hidden (boolean, false): Whether to open the file hidden.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command22">
+    <td>ping</td>
+  </tr>
+  <tr class="hidden" id="command22">
+    <td class="command-info">
+      <p><strong>Description:</strong> Sends a ping request.</p>
+      <p><strong>Example:</strong> ping</p>
+      <p><strong>Arguments:</strong> None</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command23">
+    <td>screen</td>
+  </tr>
+  <tr class="hidden" id="command23">
+    <td class="command-info">
+      <p><strong>Description:</strong> Screens the user.</p>
+      <p><strong>Example:</strong> screen</p>
+      <p><strong>Arguments:</strong> None</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command24">
+    <td>set-prefix</td>
+  </tr>
+  <tr class="hidden" id="command24">
+    <td class="command-info">
+      <p><strong>Description:</strong> Sets a new prefix.</p>
+      <p><strong>Example:</strong> set-prefix "?"</p>
+      <p><strong>Arguments:</strong> new-prefix (text): The new prefix to set.</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command25">
+    <td>set-report-channel</td>
+  </tr>
+  <tr class="hidden" id="command25">
+    <td class="command-info">
+      <p><strong>Description:</strong> Sets a new report channel.</p>
+      <p><strong>Example:</strong> set-report-channel 43672462378 34267462387</p>
+      <p><strong>Arguments:</strong> server-ID (number): The ID of the server. channel-ID (number): The ID of the channel.</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command26">
+    <td>set-token</td>
+  </tr>
+  <tr class="hidden" id="command26">
+    <td class="command-info">
+      <p><strong>Description:</strong> Sets a new token.</p>
+      <p><strong>Example:</strong> set-token "_mdUB34nn78"</p>
+      <p><strong>Arguments:</strong> new-token (text): The new token to set.</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command27">
+    <td>taskinfo</td>
+  </tr>
+  <tr class="hidden" id="command27">
+    <td class="command-info">
+      <p><strong>Description:</strong> Provides information about a task.</p>
+      <p><strong>Example:</strong> taskinfo "task"</p>
+      <p><strong>Arguments:</strong> task (text): The task to get information about.</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command28">
+    <td>tasklist</td>
+  </tr>
+  <tr class="hidden" id="command28">
+    <td class="command-info">
+      <p><strong>Description:</strong> Displays a list of tasks.</p>
+      <p><strong>Example:</strong> tasklist</p>
+      <p><strong>Arguments:</strong> None</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command29">
+    <td>test-report</td>
+  </tr>
+  <tr class="hidden" id="command29">
+    <td class="command-info">
+      <p><strong>Description:</strong> Generates a test report with a message.</p>
+      <p><strong>Example:</strong> test-report "hello"</p>
+      <p><strong>Arguments:</strong> message (text, "Test"): The message for the test report.</p>
+    </td>
+  </tr>
+</table>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var rows = document.querySelectorAll('.clickable-row');
+    rows.forEach(function(row) {
+      row.addEventListener('click', function() {
+        var target = row.getAttribute('data-target');
+        var infoRow = document.getElementById(target);
+        infoRow.classList.toggle('hidden');
+      });
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var rows = document.querySelectorAll('.clickable-row');
+    var searchInput = document.getElementById('searchInput');
+    var openedRow = null;
+
+    // Function to handle search input
+    function handleSearch() {
+      var searchTerm = searchInput.value.toLowerCase();
+      rows.forEach(function(row) {
+        var command = row.querySelector('td').textContent.toLowerCase();
+        var infoRow = document.getElementById(row.getAttribute('data-target'));
+        if (command.includes(searchTerm)) {
+          row.style.display = '';
+          infoRow.style.display = '';
+        } else {
+          row.style.display = 'none';
+          infoRow.style.display = 'none';
+        }
+      });
+    }
+
+    // Event listener for search input
+    searchInput.addEventListener('input', handleSearch);
+    
+    // Event listener for toggling command info
+    document.addEventListener('click', function(event) {
+      var target = event.target;
+      if (target.classList.contains('clickable-row')) {
+        var infoRow = document.getElementById(target.getAttribute('data-target'));
+        if (openedRow && openedRow !== infoRow) {
+          openedRow.classList.add('hidden');
+        }
+        openedRow = infoRow;
+        infoRow.classList.toggle('hidden');
+      }
+    });
+  });
+</script>
+
+
+
+
+</body>
+</html>

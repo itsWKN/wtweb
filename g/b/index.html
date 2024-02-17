@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot Creation Guide</title>
+    <link rel="stylesheet" href="bot.css">
+</head>
+<body>
+    <h1>Guide to Creating a Discord Bot</h1>
+    <p>Welcome to our guide on creating a Discord bot!</p>
+    <h2>Step 1: Setting up a Discord Developer Account</h2>
+    <ol>
+        <li>Go to the <a href="https://discord.com/developers/applications">Discord Developer Portal</a>.</li>
+        <li>Log in or create an account if you haven't already.</li>
+        <li>Create a new application by clicking on the "New Application" button.</li>
+        <li>Give your application a name and click "Create".</li>
+    </ol>
+    <h2>Step 2: Adding a Bot to Your Application</h2>
+    <ol>
+        <li>After creating your application, navigate to the "Bot" tab.</li>
+        <li>Click on "Add Bot".</li>
+        <li>Customize your bot's username and icon if desired.</li>
+        <li>Copy the bot token. This will be used to authenticate your bot with Discord.</li>
+    </ol>
+    <h2>Step 3: Inviting Your Bot to a Discord Server</h2>
+    <ol>
+        <li>Go back to the "General Information" tab in your application.</li>
+        <li>Copy the "Client ID".</li>
+        <li>Use the following URL, replacing "CLIENT_ID" with your actual client ID:<br>
+            <code>https://discord.com/oauth2/authorize?client_id=CLIENT_ID&scope=bot</code>
+        </li>
+        <li>Select the server you want to add the bot to and click "Authorize".</li>
+    </ol>
+    <p>Congratulations! Your bot is now in your Discord server.</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 5px;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
