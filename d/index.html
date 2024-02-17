@@ -81,7 +81,7 @@
   </tr>
   <tr class="hidden" id="command6">
     <td class="command-info">
-      <p><strong>Description:</strong> Restarts the system.</p>
+      <p><strong>Description:</strong> Restarts the process.</p>
       <p><strong>Example:</strong> restart</p>
       <p><strong>Arguments:</strong> None</p>
     </td>
@@ -113,27 +113,18 @@
   </tr>
   <tr class="hidden" id="command9">
     <td class="command-info">
-      <p><strong>Description:</strong> Retrieves the ID.</p>
+      <p><strong>Description:</strong> Retrieves the ID of the client.</p>
       <p><strong>Example:</strong> get-id</p>
       <p><strong>Arguments:</strong> None</p>
     </td>
   </tr>
-  <tr class="clickable-row" data-target="command10">
-    <td>get-prefix</td>
-  </tr>
-  <tr class="hidden" id="command10">
-    <td class="command-info">
-      <p><strong>Description:</strong> Retrieves the prefix.</p>
-      <p><strong>Example:</strong> get-prefix</p>
-      <p><strong>Arguments:</strong> None</p>
-    </td>
-  </tr>
+  <!--  -->
   <tr class="clickable-row" data-target="command11">
     <td>get-token</td>
   </tr>
   <tr class="hidden" id="command11">
     <td class="command-info">
-      <p><strong>Description:</strong> Retrieves the token.</p>
+      <p><strong>Description:</strong> Retrieves the bot token.</p>
       <p><strong>Example:</strong> get-token</p>
       <p><strong>Arguments:</strong> None</p>
     </td>
@@ -143,7 +134,7 @@
   </tr>
   <tr class="hidden" id="command12">
     <td class="command-info">
-      <p><strong>Description:</strong> Screens the user.</p>
+      <p><strong>Description:</strong> Retrieves a screenshot.</p>
       <p><strong>Example:</strong> screen</p>
       <p><strong>Arguments:</strong> None</p>
     </td>
@@ -194,7 +185,7 @@
   </tr>
   <tr class="hidden" id="command17">
     <td class="command-info">
-      <p><strong>Description:</strong> Retrieves the prefix.</p>
+      <p><strong>Description:</strong> Retrieves the bot prefix.</p>
       <p><strong>Example:</strong> get-prefix</p>
       <p><strong>Arguments:</strong> None</p>
     </td>
@@ -224,7 +215,7 @@
   </tr>
   <tr class="hidden" id="command20">
     <td class="command-info">
-      <p><strong>Description:</strong> Lists files in a directory.</p>
+      <p><strong>Description:</strong> Lists files and directories in a directory.</p>
       <p><strong>Example:</strong> list "c:\windows"</p>
       <p><strong>Arguments:</strong> directory (string): The directory to list files from.</p>
     </td>
@@ -322,6 +313,19 @@
       <p><strong>Description:</strong> Generates a test report with a message.</p>
       <p><strong>Example:</strong> test-report "hello"</p>
       <p><strong>Arguments:</strong> message (text, "Test"): The message for the test report.</p>
+    </td>
+  </tr>
+  <tr class="clickable-row" data-target="command30">
+    <td>cd</td>
+  </tr>
+  <tr class="hidden" id="command30">
+    <td class="command-info">
+      <p><strong>Description:</strong> Change the current directory the program is in.</p>
+      <p><strong>Example:</strong> list "c:\windows"</p>
+      <p><strong>Arguments:</strong> cd (text): Directional Command:
+      <br>jump into a subdirectory by typing a directory name, 
+      <br>jump into a directory by typing a directory path, 
+      <br>type .. to jump into the next lower layer subdirectory</p>
     </td>
   </tr>
 </table>
